@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="lib/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<title>Copy Files Control Pannel</title>
+</head>
+<body ng-controller="GeneralController" ng-cloak>
+<div class="jumbotron text-center">
+<h1 class="display-1">ControlPannel</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <button type="button" ng-click="setStarted()" id="btnstarted">Start</button>
+      <button type="button" ng-click="setStopped()" id="btnstopped">Stop</button>
+      <label class="nextDate">...</label>
+    </div>
+  </div>
+
+</div>
+<p>{{isstarted}}</p>
+
+
+
+<script src="lib/jquery-3.4.1.min.js"></script>
+<script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+<script src="lib/angular-1.7.9/angular.min.js"></script>
+<script src="lib/angular-1.7.9/angular-resource.min.js"></script>
+<script src="app/app.js"></script>
+</body>
+</html>
